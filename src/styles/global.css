@@ -1,1 +1,6 @@
+@import '@fontsource-variable/comfortaa';
 @import 'tailwindcss';
+
+@theme {
+  --font-display: 'Comfortaa Variable', sans-serif;
+}
