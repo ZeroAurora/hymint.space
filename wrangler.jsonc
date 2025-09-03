@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hymint-space",
+  "main": "./dist/_worker.js/index.js",
+
+  "compatibility_date": "2025-09-03",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist"
+  },
+  "observability": {
+    "enabled": true
+  },
+
+  "routes": [
+    {
+      "pattern": "hymint.space",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.hymint.space",
+      "custom_domain": true
+    }
+  ]
+}
